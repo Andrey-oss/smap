@@ -31,7 +31,7 @@ SCBYTE = r'\\x[0-9a-fA-F]{2}'
 
 def ParseArgs():
 
-	parser = ArgumentParser(description='smap - Advanced Shellcode Mapper [ Leaked by t.me/termuxhub ]')
+	parser = ArgumentParser(description='smap - Advanced Shellcode Mapper')
 	parser.add_argument('-a','--architecture',\
 				type=str,\
 				help="Specify architecture",\
@@ -60,7 +60,7 @@ def Banner():
       %s    |__/
 
 
-				''')%(pyc.Fore('red')+pyc.Style('ul')+'Leaked by t.me/termuxhub'+pyc.Style('normal'))
+				''')%(pyc.Fore('red')+pyc.Style('ul')+'Leaked by @Amplificator_one'+pyc.Style('normal'))
 	print (pyc.Info("Started smap at "+time.strftime('%X')))
 
 def SCbyteFind(BUFFER):
