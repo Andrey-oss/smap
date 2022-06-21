@@ -1,1 +1,1 @@
-Make you sure that objdump and hexedit is installed on your system
+Make you sure that objdump and argparse (python module) installed on your system
