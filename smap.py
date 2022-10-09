@@ -212,7 +212,7 @@ def disassemble(fname, arch, syntax):
 	print("\t-> File name=%s%s%s")%(pyc.Fore("blue"),fname.split('/')[1],pyc.Style("normal"))
 	print("\t-> Architecture=%s%s%s")%(pyc.Fore("blue"),arch,pyc.Style("normal"))
 	print("\t-> Syntax=%s%s%s")%(pyc.Fore("blue"),syntax,pyc.Style("normal"))
-	if(syntax=="AT&T"):
+	if(syntax=="at-and-t"):
 		cmdArg = ['objdump','-D','-b','binary','-m',arch,fname]
 	else:
 		cmdArg = ['objdump','-D','-b','binary','-m',arch,'-M','intel',fname]
