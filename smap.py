@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 #    smap - Advanced Shellcode Mapper
 #    This program is free software; you can redistribute it and/or modify
@@ -251,5 +251,5 @@ if __name__ == '__main__':
 		totBC, totACS = prettyPrint(disData)
 		AfterDis(totBC, totACS)
 	except Exception, ex:
-		#print pyc.Err("Exception('%s') occured\n\t%s-> Errno : %d\n\t-> Error : %s")%(type(ex).__name__,pyc.Fore('grey'),ex.args[0],ex.args[1])
-		print(pyc.Err("Error : %s%s%s"%(pyc.Fore('grey'), str(ex), pyc.Style('normal'))))
+		print pyc.Err("Exception('%s') occured\n\t%s-> Errno : %d\n\t-> Error : %s")%(type(ex).__name__,pyc.Fore('grey'),ex.args[0],ex.args[1])
+		#print(pyc.Err("Error : %s%s%s"%(pyc.Fore('grey'), str(ex), pyc.Style('normal'))))
