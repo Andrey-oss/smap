@@ -60,7 +60,7 @@ def Banner():
       %s    |__/
 
 
-				''')%(pyc.Fore('red')+pyc.Style('ul')+'Leaked by @Amplificator_one'+pyc.Style('normal'))
+				''')%(pyc.Fore('red')+pyc.Style('ul')+'Leaked by Andreyoss'+pyc.Style('normal'))
 	print (pyc.Info("Started smap at "+time.strftime('%X')))
 
 def SCbyteFind(BUFFER):
