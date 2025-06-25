@@ -1,19 +1,56 @@
-Private shellcode mapper!
+# smap - Advanced Shellcode Mapper
 
-* Requirements
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-1. Python2
-2. OBJDump
-3. Argparse (via pip2)
+`smap` is a sophisticated shellcode analysis tool that provides disassembly capabilities and bad character detection for security researchers and penetration testers.
 
-* Usage
+## Key Features
 
-Syntax: python2 smap.py -f SHELLCODE.TXT -sf at-and-t/intel
+- Shellcode analysis in `\xXX` format
+- Architecture-aware disassembly (i386/x86_64)
+- Multiple syntax formats (Intel/AT&T)
+- Bad character detection
+- ASCII representation of shellcode
+- Visual highlighting of assembly instructions
+- Section analysis of binary payloads
 
-Example: python2 smap.py -f SHELLCODE.TXT -sf intel
+## Requirements
 
-* File format which contains shellcode
+- Python2
+- OBJDump
+- Argparse (via pip2)
 
-SHELLCODE.txt > \xeb\x1c\x5a\x89\xd6\x8b\x02\x66\x3d\xca\x7d\x75\x06\x66\x05\x03\x03\x89\x02\xfe\xc2\x3d\x41\x41\x41\x41\x75\xe9\xff\xe6\xe8\xdf\xff\xff\xff\x31\xd2\x6a\x0b\x58\x99\x52\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x52\x53\x89\xe1\xca\x7d\x41\x41\x41\x41
+## Installation
 
-Due to some github rules, before use this tool you must create "tmp" dir into this folder
+1. Clone git repository
+```bash
+git clone https://github.com/Andrey-oss/smap.git
+cd smap
+```
+
+2. Install required library
+```bash
+pip2 install argparse
+```
+
+## Usage
+Basic usage:
+```bash
+./smap.py -f <shellcode_file> [-a architecture] [-sf syntax_format]
+```
+
+Example:
+```bash
+./smap.py -f shellcode.txt -a i386 -sf intel
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (git checkout -b feature/your-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin feature/your-feature)
+5. Open a Pull Request
+
+## 📜 License
+MIT License. See LICENSE for details.
